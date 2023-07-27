@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Umfrage zur Nutzung elektronischer Medien in der Freizeit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <h1 id="title">Umfrage zur Nutzung elektronischer Medien in der Freizeit</h1>
+    <p id="description">Bitte beantworten Sie die Fragen wahrheitsgemäß</p>
+    <form id="survey-form" method="post" action="http://www.example.com/example.htm">
+ 
+    <fieldset>
+      <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Vornamen eingeben" required></label>
+      <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Email eingeben" required></label>
+      <label id="number-label" for="age">Alter (optional): <input id="number" type="number" min="12" max="120" placeholder="Alter eingeben"></label>
+      <label for="dropdown">Art Ihrer momentanen Beschäftigung
+        <select id="dropdown">
+          <option value="" disabled selected>(auswählen)</option>
+          <option value="1">Vollzeit</option>
+          <option value="2">Teilzeit</option>
+          <option value="3">Student</option>
+          <option value="4">Schüler</option>
+          <option value="5">Arbeitslos</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <p>Wie viele Stunden verbringen Sie täglich vor elektronischen Medien in Ihrer Freizeit?</p>  
+      <label for="0-1" class="inline"><input id="0-1" value="1" type="radio" name="time">0-1</label>
+      <label for="1-2" class="inline"><input id="1-2" value="2" type="radio" name="time">1-2</label>
+      <label for="2-3" class="inline"><input id="2-3" value="3" type="radio" name="time">2-3</label>
+      <label for="3-4" class="inline"><input id="3-4" value="4" type="radio" name="time">3-4</label>
+      <label for="4<" class="inline"><input id="4<" value="5" type="radio" name="time">4<</label>
+    </fieldset>
+    <fieldset>
+      <p>Welche Medien nutzen Sie dabei?</p>
+      <label for="computer"><input id="computer" value="1" type="checkbox">Computer</label>
+      <label for="smartphone"><input id="smartphone" value="2" type="checkbox">Smartphone</label>
+      <label for="fernseher"><input id="fernseher" value="3" type="checkbox">Fernseher</label>
+      <label for="telefon"><input id="telefon" value="4" type="checkbox">Telefon</label>
+      <label for="radio"><input id="radio" value="5" type="checkbox">Radio</label>
+      <label for="spielekonsole"><input id="spielekonsole" value="6" type="checkbox">Spielekonsole</label>
+      <label for="sonstiges" id="space">Sonstiges: <textarea id="sonstiges" rows="3" cols="30" placeholder="andere Medien"></textarea></label>
+    </fieldset>
+    <input id="submit" type="submit" value="Abschicken">
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
