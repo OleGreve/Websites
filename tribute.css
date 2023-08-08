@@ -1,0 +1,45 @@
+body {
+  background-color: #d3d3d3;
+}
+header {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 0.3em;
+}
+h1 {
+  font-size: 2.5em;
+}
+div{
+  padding: 2em;
+  width: 50%;
+  margin: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-color: white;  
+  border-radius: 9px;
+}
+p {
+  text-align: center;
+}
+figcaption {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  font-family: sans-serif;
+}
+li {
+  width: 50%;
+  margin: 0.7em auto;
+  font-size: 1.1em;
+}
+p[id="quote"]{
+  padding: 2em;
+  font-size: 1.1em;
+  width: 30%;
+  margin: auto;
+}
