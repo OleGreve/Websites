@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width- initial-scale=1.0" />
+    <title>Einführung in Python</title>
+    <link rel="stylesheet" href="python.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Dokumentation</header>
+      <ul>
+        <li><a class="nav-link" href="#einführung">Einführung</a></li>
+        <li><a class="nav-link" href="#hello_world">Hello World</a></li>
+        <li><a class="nav-link" href="#variablen">Variablen</a></li>
+        <li><a class="nav-link"  href="#if-bedingung">if-Bedingung</a></li>
+        <li><a class="nav-link" href="#datentypen">Datentypen</a></li>
+        <li><a class="nav-link" href="#schleifen">Schleifen</a></li>
+        <li><a class="nav-link" href="#funktionen">Funktionen</a></li>
+        <li><a class="nav-link" href="#quellen">Quellen</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="einführung">
+        <header>Einführung</header>
+        <p>Python ist eine Programmiersprache, die häufig in Webanwendungen, Softwareentwicklung, in der Datenwissenschaft und im Machine Learning (ML) verwendet wird. Entwickler benutzen Python, weil es effizient und leicht zu erlernen ist und auf vielen verschiedenen Plattformen laufen kann.</p>
+        <p>Zu den Vorteilen von Python gehören:</p>
+        <ul>
+          <li>Entwickler können ein Python-Programm leicht lesen und verstehen, da es eine grundlegende Syntax hat</li>
+          <li>Python verfügt über eine große Standardbibliothek, die wiederverwendbare Codes für fast jede Aufgabe enthält. Dadurch müssen Entwickler keinen Code komplett neu schreiben.</li>
+          <li>Entwickler können Python problemlos mit anderen gängigen Programmiersprachen wie Java, C und C++ verwenden.</li>
+          <li>Python ist auf verschiedene Computer-Betriebssysteme wie Windows, macOS, Linux und Unix portierbar.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="hello_world">
+        <header>Hello World</header>
+        <p>Wenn wir versuchen, eine neue Programmiersprache zu lernen, fangen wir oft damit an, zu lernen, wie man die Anweisung „Hello World“ aus dem Bildschirm ausgibt. <br><br>Das ist eine ziemlich einfache Aufgabe. Die einzige Voraussetzung, die du dafür kennen musst, ist die Python print-Anweisung. Diese Anweisung gibt alles aus, was ihr übergeben wurde.</p>
+        <div id="codes">
+        <code>print("Hello World")</code>
+        </div>
+        <p>Dieser Codeblock sorgt wegen der print-Anweisung für die Ausgabe "Hello World" auf der Konsole.
+      </section>
+      <section class="main-section" id="variablen">
+        <header>Variablen</header>
+        <p>Eine Variable im allgemeinsten Sinne ist einfach ein Behälter (Container) zur Aufbewahrung von bestimmten Werten, also z.B. Strings oder Zahlen. Man kann im Verlauf des Programms auf diese Variablen, oder genauer auf den Wert ihres Inhaltes zugreifen, oder ihnen einen neuen Wert zuweisen.</p>
+        <div id="codes">
+        <code>i = 42</code>
+        </div>
+        <p>Obige Anweisung darf man nicht als mathematisches Gleichheitszeichen sehen, sondern als "der Variablen i wird der Wert 42 zugewiesen", d.h. der Inhalt von i ist nach der Zuweisung 42. Man kann diesen Wert der Variablen auch, wie man im folgenden Beispiel sieht, anschließend ändern:</p>
+        <div id="codes">
+        <code>i = i + 5</code>
+        </div>
+        <p>Nun hat die Variable i den Wert 47. Anders als in den meisten Programmiersprachen, muss man in Python den Datentyp einer Variable nicht explizit angeben. So wird die Eingabe "42" automatisch als Ganzzahl erkannt. </p>
+      </section>
+      <section class="main-section" id="if-bedingung">
+        <header>if-Bedingung</header>
+        <p>In Python gibt es die Möglichkeiten Bedingungen zu überprüfen und entsprechend im Programmablauf darauf zu reagieren. Damit das Programm fehlerfrei abläuft, muss der Code, welcher zu der if-Bedingung gehört, <b>unbedingt eingerückt werden</b>.</p>
+        <div id="codes">
+        <code>wert = 7<br>if wert < 5:<br>&nbsp&nbsp&nbsp&nbspprint("Ich werde nur ausgeführt, wenn 7 < 5 gilt.")<br>print("Ich werde unabhängig von der Bedingung ausgeführt, denn ich bin nicht eingerückt.")</code>
+        </div>
+        <p>In diesem Beispiel wird die erste print-Anweisung nur ausgegeben, wenn die Bedingung stimmt. Manchmal ist es jedoch auch von Vorteil, wenn bestimmter Code nur ausgeführt wird, wenn die Bedingung nicht zutrifft. In diesem Fall kann man Gebrauch von dem Wort <i>else</i> machen.</p>
+        <div id="codes">
+        <code>wert = 7<br>if wert < 5:<br>&nbsp&nbsp&nbsp&nbspprint("Ich werde nur ausgeführt, wenn 7 < 5 gilt.")<br>else:<br>&nbsp&nbsp&nbsp&nbspprint("Ich werde nur ausgeführt, wenn 7 < 5 nicht gilt.")<br>print("Ich werde unabhängig von der Bedingung ausgeführt, denn ich bin nicht eingerückt.")</code>
+        </div>
+      </section>
+      <section class="main-section" id="datentypen">
+        <header>Datentypen</header>
+        <p>In Python gibt es 6 grundlegende Datentypen, die oft verwendet werden. Diese lauten:</p>
+        <ul>
+          <li>integer:<span class="rechts">Ganzzahlen, z. B. 6</span></li>
+          <li>float:<span class="rechts">Fließkommazahlen, z. B. 1,5</span></li>
+          <li>string:<span class="rechts">Zeichenketten, z. B. "Hello World"</span></li>
+          <li>boolean:<span class="rechts">Wahrheitswerte, z. B. True oder False</span></li>
+          <li>list:<span class="rechts">Liste, z. B. [“Hose“, “Hemd“]</span></li>
+          <li>tuple:<span class="rechts">Tupel (nicht veränderbare Liste), z. B. (‘Pizza‘,‘Salat‘,‘Eis‘)</span></li>
+        </ul>
+      </section>
+      <section class="main-section" id="schleifen">
+        <header>Schleifen</header>
+        <p>Schleifen, werden benötigt, um einen Codeblock, den man auch als Schleifenkörper bezeichnet, wiederholt auszuführen. In Python gibt es zwei Schleifentypen: die while-Schleife und die for-Schleife.<br><br>Die for-Schleife wird hauptsächlich auf 2 verschiedene Arten angewendet.</p>
+        <div id="codes">
+        <code>for wert in meine_liste:<br>&nbsp&nbsp&nbsp&nbspprint("Tu etwas mit wert")<br><br>for index in range(x):<br>&nbsp&nbsp&nbsp&nbspprint("Mach etwas x-mal (x ist eine Ganzzahl)")</code>
+        </div>
+        <p>In der ersten for-Schleife wird eine Liste mit dem Namen "meine_liste" durchlaufen. Die Variable "wert" nimmt dabei den Wert des entsprechenden Listen-Elements an. Im ersten Schleifen-Durchlauf hat die Variable den Wert des ersten Listen-Elements, beim letzten Durchlauf den des letzten Elements. Erst danach wird mit dem Code außerhalb der Schleife (nicht eingerückt) fortgesetzt. In der zweiten for-Schleife wird der Code innerhalb der Schleife x-mal ausgeführt. "x" kann dabei auch als die Länge einer Liste (Anzahl der Elemente) definiert werden, auch wenn diese nicht bekannt ist.</p>
+        <div id="codes">
+        <code>x = 4<br>while x < 5:<br>&nbsp&nbsp&nbsp&nbspprint("Tu etwas, solange x < 5 gilt.")</code>
+        </div>
+        <p>Die while-Schleife wird ausgeführt, wenn die angegebene Bedingung stimmt. Anders als bei der for-Schleife, weiß man nicht, wie viele Durchläufe gemacht werden. Bei einem fehlerhaften Schleifenkörper kann es zu sogenannten Endlos-Schleifen kommen. Dabei wird im Schleifenkörper die eigentliche Bedingung nicht verändert, wodurch die Schleife unendlich oft wiederholt werden würde. Daher muss im Beispiel die Variable "x" innerhalb des Schleifenkörpers so verändert werden, dass sie irgendwann größer oder gleich 5 ist, wodurch die Bedingung nicht mehr zutrifft und die Schleife nicht mehr ausgeführt wird.</p> 
+      </section>
+      <section class="main-section" id="funktionen">
+        <header>Funktionen</header>
+        <p>Das Konzept einer Funktion ist eines der wichtigsten in der Mathematik. Eine übliche Verwendung von Funktionen in Computersprachen ist die Implementierung mathematischer Funktionen. Eine solche Funktion berechnet ein oder mehrere Ergebnisse, die vollständig durch die an sie übergebenen Parameter bestimmt werden.</p>
+        <div id="codes">
+        <code>def quadrieren (x):<br>&nbsp&nbsp&nbsp&nbspz = x * x<br>&nbsp&nbsp&nbsp&nbspreturn z</code>
+        </div>
+        <p>Im Beispiel bekommt die Funktion "quadrieren" einen Parameter ("x"). Der Rückgabewert dieser Funktion ist das Quadrat des Parameters. Möchte man nun das Quadrat einer Zahl bekommen, so muss man nur die Funktion aufrufen.</p>
+        <div id="codes">
+        <code>a = quadrieren(4)</code>
+        </div>
+        <p>Auf diese Art kann die Länge des Codes verkürzt werden und eine Dopplung von Codeblöcken (schlechter Programmier-Stil) vermieden werden.</p>
+      </section>
+      <section class="main-section" id="quellen">
+        <header>Quellen</header>
+        <p>Folgende Quelle ist verwendet worden: <a target="_blank" href="https://docs.python.org/3/tutorial/index.html">The Python Tutorial</a></p>
+      </section>
+    </main>
+  </body>
+</html>
